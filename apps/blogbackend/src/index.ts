@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import blogRoutes from "./routes/blog.route";
 
@@ -6,7 +7,6 @@ const PORT = process.env.PORT || 9000;
 
 app.use(express.json());
 
-// Routes
 app.use("/", blogRoutes);
 
 app.listen(PORT, () => {
