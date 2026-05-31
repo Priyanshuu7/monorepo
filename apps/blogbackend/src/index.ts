@@ -3,6 +3,7 @@ import express from "express";
 import blogRoutes from "./routes/blog.route";
 
 const app = express();
+
 const PORT = process.env.PORT || 9000;
 
 app.use(express.json());
